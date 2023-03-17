@@ -1,0 +1,25 @@
+//I'll not use a css framework since I don't see the need
+
+// COMMON
+@import "common/variables";
+@import "common/fonts";
+@import "common/typography";
+@import "common/grid";
+@import "common/buttons";
+@import "common/links";
+@import "common/base";
+@import "common/inputs";
+@import "common/forms";
+
+// COMPONENTS
+@import "components/mobile-header";
+@import "components/user-tile";
+@import "components/search-header";
+@import "components/pokemon-card";
+
+// PAGES
+@import "pages/home";
+@import "pages/sign-in";
+@import "pages/sign-up";
+@import "pages/profile";
+

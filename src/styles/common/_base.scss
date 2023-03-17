@@ -1,0 +1,24 @@
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background-color: $black;
+	font-family: $primary-font;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+#root{
+	height: 100%;
+}
+
+input {
+	border: none;
+	outline: none;
+}

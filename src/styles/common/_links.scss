@@ -1,0 +1,17 @@
+.link {
+	border: none;
+	line-height: 2;
+	color: $blue-1;
+	font-size: 16px;
+	background: none;
+	font-weight: $regular;
+	text-decoration: underline;
+
+	&:active {
+		color: $blue-0;
+	}
+
+	&:disabled {
+		color: $grey-3;
+	}
+}

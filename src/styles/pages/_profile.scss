@@ -1,0 +1,31 @@
+.profile {
+
+	.profile-content {
+		display: flex;
+		margin-top: 60px;
+		flex-flow: column;
+		align-items: center;
+	}
+
+	.user-tile {
+		width: 100px;
+		height: 100px;
+	}
+
+	.profile-user-data-container {
+		margin-top: 24px;
+		text-align: center;
+
+		.profile-name {
+			color: $white;
+		}
+
+		.profile-email {
+			color: $grey-3;
+		}
+	}
+
+	.logout-container {
+		margin-top: 48px;
+	}
+}

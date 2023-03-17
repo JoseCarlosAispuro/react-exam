@@ -1,0 +1,10 @@
+.form {
+	.inputs-fields {
+		row-gap: 16px;
+		display: flex;
+		flex-flow: column;
+	}
+	.submit {
+		margin-top: 24px;
+	}
+}

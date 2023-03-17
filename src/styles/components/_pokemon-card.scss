@@ -1,0 +1,31 @@
+.pokemon-card {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	border-radius: 8px;
+	background-color:$grey-1;
+	padding: 16px 0;
+
+	.pokemon-image-container {
+		max-width: 143px;
+		height: 100px;
+
+		.pokemon-image {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.pokemon-content {
+		margin-top: 8px;
+		text-align: center;
+
+		.pokemon-name {
+			color: $white;
+			text-transform: capitalize;
+		}
+		.pokemon-number {
+			color: $grey-3;
+		}
+	}
+}

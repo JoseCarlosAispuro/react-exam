@@ -1,0 +1,36 @@
+.heading {
+	line-height: 1.5;
+	font-weight: $semi-bold;
+
+	&.primary {
+		font-size: 32px;
+	}
+
+	&.secondary {
+		font-size: 18px;
+	}
+
+	&.tertiary {
+		font-size: 16px;
+	}
+}
+
+.body {
+	line-height: 2;
+	font-weight: $regular;
+
+	&.regular {
+		font-size: 16px;
+	}
+
+	&.small {
+		font-size: 14px;
+	}
+
+	&.x-small {
+		font-size: 12px;
+		line-height: 1.5;
+	}
+}
+
+

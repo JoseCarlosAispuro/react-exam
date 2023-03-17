@@ -1,0 +1,22 @@
+.sign-in {
+	height: 100%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: space-between;
+
+	.logo-container {
+		margin-top: 125px;
+	}
+
+	.sign-in-form-container {
+		width: 100%;
+		text-align: center;
+		padding-bottom: 16px;
+
+		.register-link {
+			display: block;
+			margin-top: 16px;
+		}
+	}
+}

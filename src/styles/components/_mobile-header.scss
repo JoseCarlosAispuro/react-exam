@@ -1,0 +1,30 @@
+.header {
+	height: 60px;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+
+	.chevron-prev-container{
+		width: 10%;
+
+		.prev-arrow {
+			margin-left: 7.5px;
+		}
+	}
+
+	.page-header {
+		width: 80%;
+		color: $white;
+		text-align: center;
+	}
+
+	.chevron-next-container{
+		width: 10%;
+		text-align: right;
+
+		.next-arrow {
+			margin-right: 7.5px;
+			transform: rotate(180deg);
+		}
+	}
+}
