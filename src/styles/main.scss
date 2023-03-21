@@ -10,6 +10,7 @@
 @import "common/base";
 @import "common/inputs";
 @import "common/forms";
+@import "common/tags";
 
 // COMPONENTS
 @import "components/mobile-header";
@@ -24,4 +25,5 @@
 @import "pages/sign-in";
 @import "pages/sign-up";
 @import "pages/profile";
+@import "pages/pokemon-details";
 

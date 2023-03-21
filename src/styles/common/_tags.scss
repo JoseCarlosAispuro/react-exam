@@ -1,0 +1,16 @@
+.type-tag {
+	line-height: 1;
+	font-size: 12px;
+	padding: 6px 16px;
+	border-radius: 95px;
+	font-weight: $medium;
+	text-transform: capitalize;
+
+	@each $typeName, $color in $types {
+		&.#{$typeName} {
+			color: $color;
+			border: 1px solid $color;
+			background-color: rgba($color, 0.15);
+		}
+	}
+}

@@ -8,7 +8,7 @@ export const useSearch = (searchableData: GeneralDataT[]) => {
     const [searchIsActive, setSearchIsActive] = useState<boolean>(false)
 
     useEffect(() => {
-        const search = searchableData.filter(data => data.name.includes(searchString));
+        const search = searchableData?.filter(data => data.name.includes(searchString));
         setSearchResults(getResultChunks(search, 0, 20))
     }, [searchString]);
 
