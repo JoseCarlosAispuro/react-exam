@@ -1,0 +1,19 @@
+.search-results-state {
+	height: 100vh;
+	flex-flow: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+
+	.search-content{
+		margin-top: 24px;
+	}
+
+	.heading {
+		color: $grey-5;
+	}
+
+	.search-copy {
+		color: $grey-3;
+	}
+}

@@ -1,5 +1,15 @@
 .home {
+	height: 100%;
+
 	.pokemon-cards-container {
 		margin-top: 100px;
+	}
+
+	.search-results-container {
+		height: 100%;
+
+		.search-results {
+			margin-top: 100px;
+		}
 	}
 }

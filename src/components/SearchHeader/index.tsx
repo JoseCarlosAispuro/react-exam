@@ -1,17 +1,19 @@
-import React from "react";
 import {Link} from "react-router-dom";
+import {useScroll} from "../../hooks/useScroll";
 
 type SearchT = {
-    searchValue: string
+    searchString: string
     onSearchChange: (event: any) => void
     searchIsActive: boolean
     onSearchFocus: () => void
     resetSearch: () => void
 }
 
-const SearchHeader = ({searchValue, onSearchChange, searchIsActive, onSearchFocus, resetSearch}: SearchT) => {
+const SearchHeader = ({searchString, onSearchChange, searchIsActive, onSearchFocus, resetSearch}: SearchT) => {
+    const {scrollPosition} = useScroll()
+
     return (
-        <div className="search-header">
+        <div className={`search-header ${scrollPosition > 10 ? 'active' : ''}`}>
             <div className="search-actions-container grid container">
                 <form>
                     <div className="input-container search">
@@ -19,7 +21,7 @@ const SearchHeader = ({searchValue, onSearchChange, searchIsActive, onSearchFocu
                         <input className="input"
                                type="text"
                                name="search"
-                               value={searchValue}
+                               value={searchString}
                                onChange={onSearchChange}
                                onFocus={onSearchFocus}
                                placeholder="Search"

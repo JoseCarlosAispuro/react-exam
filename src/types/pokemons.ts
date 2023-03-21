@@ -32,7 +32,7 @@ type GameIndicesT = {
     version: GeneralDataT
 }
 
-type GeneralDataT = {
+export type GeneralDataT = {
     name: string
     url: string
 }

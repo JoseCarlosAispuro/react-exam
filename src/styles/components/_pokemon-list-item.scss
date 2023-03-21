@@ -1,0 +1,27 @@
+.pokemon-list-item {
+	width: 100%;
+	display: flex;
+	padding: 8px 0;
+
+	.pokemon-image-container {
+		width: 60px;
+		height: 60px;
+
+		.pokemon-image {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.pokemon-content {
+		margin-left: 16px;
+
+		.pokemon-name {
+			color: $white;
+			text-transform: capitalize;
+		}
+		.pokemon-number {
+			color: $grey-3;
+		}
+	}
+}
