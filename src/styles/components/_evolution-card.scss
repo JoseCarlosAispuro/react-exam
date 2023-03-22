@@ -1,0 +1,19 @@
+.evolution-card {
+	flex-grow: 1;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+
+	.pokemon-image-container {
+		width: 60px;
+		height: 60px;
+
+		.pokemon-image {
+			width: 100%;
+		}
+	}
+
+	.pokemon-content {
+		margin-top: 8px;
+	}
+}

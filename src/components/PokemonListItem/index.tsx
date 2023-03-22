@@ -2,7 +2,7 @@ import {Link} from "react-router-dom";
 import {usePokemon} from "../../hooks/usePokemon";
 
 const PokemonListItem = ({pokemonName}: {pokemonName: string}) => {
-    const {pokemonData, displayName} = usePokemon(pokemonName);
+    const {pokemonData, displayName, getDisplayNumber} = usePokemon(pokemonName);
 
     return(
         <Link to={`/pokemon/${pokemonName}`} className="pokemon-list-item">
@@ -14,7 +14,7 @@ const PokemonListItem = ({pokemonName}: {pokemonName: string}) => {
             <div className="pokemon-content">
                 <p className="pokemon-name body regular">{displayName}</p>
                 {pokemonData && (
-                    <p className="pokemon-number body regular">#00{pokemonData.id}</p>
+                    <p className="pokemon-number body regular">{getDisplayNumber(pokemonData.id)}</p>
                 )}
             </div>
         </Link>

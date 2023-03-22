@@ -5,7 +5,7 @@ type HeaderLinks = {
     nextLink: string
     header: string
 }
-const MobileHeader = ({prevLink, nextLink, header }: HeaderLinks) => {
+const MobileHeader = ({prevLink, nextLink, header}: HeaderLinks) => {
     return (
         <div className="header grid">
             {prevLink !== '' &&
@@ -14,14 +14,13 @@ const MobileHeader = ({prevLink, nextLink, header }: HeaderLinks) => {
             </Link>
             }
             {header !== '' &&
-                <span className="page-header heading tertiary">{header}</span>
+            <span className="page-header heading tertiary">{header}</span>
             }
             {nextLink !== '' &&
-                <Link to={nextLink} className="chevron-next-container">
-                    <img className="next-arrow" src="/images/back-chevron.svg" alt="Next"/>
-                </Link>
+            <Link to={nextLink} className="chevron-next-container">
+                <img className="next-arrow" src="/images/back-chevron.svg" alt="Next"/>
+            </Link>
             }
-
         </div>
     )
 }

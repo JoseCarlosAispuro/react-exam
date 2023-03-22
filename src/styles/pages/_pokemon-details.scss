@@ -43,11 +43,12 @@
 		}
 	}
 
-	.pokemon-content{
+	.pokemon-content {
 		text-align: center;
 
 		.pokemon-name {
 			color: $white;
+			text-transform: capitalize;
 		}
 
 		.pokemon-number {
@@ -62,6 +63,44 @@
 
 				&:first-of-type{
 					margin-left: 0;
+				}
+			}
+		}
+
+		.description {
+			color: $grey-3;
+			margin-top: 16px;
+		}
+
+		.specs {
+			display: flex;
+			margin-top: 24px;
+			padding: 16px 24px;
+			justify-content: space-between;
+
+			.spec-container {
+				display: flex;
+				width: calc(50% - 17px);
+			}
+
+			.content {
+				text-align: left;
+				margin-left: 8px;
+
+				.value, .spec-name {
+					line-height: 1;
+					font-weight: $regular;
+				}
+
+				.value {
+					color: $white;
+					font-size: 16px;
+				}
+
+				.spec-name {
+					color: $grey-3;
+					margin-top: 8px;
+					font-size: 12px;
 				}
 			}
 		}
